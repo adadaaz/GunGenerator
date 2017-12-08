@@ -1,0 +1,5 @@
+Pistols
+Submachine Guns
+Shotguns
+Assault Rifles
+Sniper Rifles
