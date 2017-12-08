@@ -42,11 +42,13 @@
             this.txtFireRate = new System.Windows.Forms.TextBox();
             this.txtReload = new System.Windows.Forms.TextBox();
             this.txtMagazine = new System.Windows.Forms.TextBox();
+            this.btnModify = new System.Windows.Forms.Button();
+            this.comboxManufacturer = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Location = new System.Drawing.Point(46, 264);
+            this.btnGenerate.Location = new System.Drawing.Point(44, 293);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(209, 23);
             this.btnGenerate.TabIndex = 0;
@@ -55,7 +57,7 @@
             // 
             // btnExport
             // 
-            this.btnExport.Location = new System.Drawing.Point(113, 309);
+            this.btnExport.Location = new System.Drawing.Point(112, 331);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(75, 23);
             this.btnExport.TabIndex = 1;
@@ -72,7 +74,7 @@
             // 
             // txtGunName
             // 
-            this.txtGunName.Location = new System.Drawing.Point(46, 29);
+            this.txtGunName.Location = new System.Drawing.Point(46, 12);
             this.txtGunName.Name = "txtGunName";
             this.txtGunName.Size = new System.Drawing.Size(209, 20);
             this.txtGunName.TabIndex = 3;
@@ -126,6 +128,7 @@
             // 
             this.txtDamage.Location = new System.Drawing.Point(162, 105);
             this.txtDamage.Name = "txtDamage";
+            this.txtDamage.ReadOnly = true;
             this.txtDamage.Size = new System.Drawing.Size(91, 20);
             this.txtDamage.TabIndex = 9;
             // 
@@ -133,6 +136,7 @@
             // 
             this.txtAccuracy.Location = new System.Drawing.Point(162, 131);
             this.txtAccuracy.Name = "txtAccuracy";
+            this.txtAccuracy.ReadOnly = true;
             this.txtAccuracy.Size = new System.Drawing.Size(91, 20);
             this.txtAccuracy.TabIndex = 10;
             // 
@@ -140,6 +144,7 @@
             // 
             this.txtFireRate.Location = new System.Drawing.Point(162, 157);
             this.txtFireRate.Name = "txtFireRate";
+            this.txtFireRate.ReadOnly = true;
             this.txtFireRate.Size = new System.Drawing.Size(91, 20);
             this.txtFireRate.TabIndex = 11;
             // 
@@ -147,6 +152,7 @@
             // 
             this.txtReload.Location = new System.Drawing.Point(162, 183);
             this.txtReload.Name = "txtReload";
+            this.txtReload.ReadOnly = true;
             this.txtReload.Size = new System.Drawing.Size(91, 20);
             this.txtReload.TabIndex = 12;
             // 
@@ -154,14 +160,35 @@
             // 
             this.txtMagazine.Location = new System.Drawing.Point(162, 209);
             this.txtMagazine.Name = "txtMagazine";
+            this.txtMagazine.ReadOnly = true;
             this.txtMagazine.Size = new System.Drawing.Size(91, 20);
             this.txtMagazine.TabIndex = 13;
+            // 
+            // btnModify
+            // 
+            this.btnModify.Location = new System.Drawing.Point(162, 252);
+            this.btnModify.Name = "btnModify";
+            this.btnModify.Size = new System.Drawing.Size(91, 23);
+            this.btnModify.TabIndex = 14;
+            this.btnModify.Text = "Modify";
+            this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
+            // 
+            // comboxManufacturer
+            // 
+            this.comboxManufacturer.FormattingEnabled = true;
+            this.comboxManufacturer.Location = new System.Drawing.Point(46, 42);
+            this.comboxManufacturer.Name = "comboxManufacturer";
+            this.comboxManufacturer.Size = new System.Drawing.Size(209, 21);
+            this.comboxManufacturer.TabIndex = 15;
             // 
             // frmGunGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(680, 415);
+            this.Controls.Add(this.comboxManufacturer);
+            this.Controls.Add(this.btnModify);
             this.Controls.Add(this.txtMagazine);
             this.Controls.Add(this.txtReload);
             this.Controls.Add(this.txtFireRate);
@@ -199,6 +226,8 @@
         private System.Windows.Forms.TextBox txtFireRate;
         private System.Windows.Forms.TextBox txtReload;
         private System.Windows.Forms.TextBox txtMagazine;
+        private System.Windows.Forms.Button btnModify;
+        private System.Windows.Forms.ComboBox comboxManufacturer;
     }
 }
 

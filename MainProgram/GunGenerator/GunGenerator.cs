@@ -16,5 +16,10 @@ namespace GunGenerator
         {
             InitializeComponent();
         }
+
+        private void btnModify_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
