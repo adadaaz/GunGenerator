@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeaponGenerator", "WeaponGenerator.csproj", "{AECC71F4-1548-4769-ADCC-F22C9473C305}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AECC71F4-1548-4769-ADCC-F22C9473C305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECC71F4-1548-4769-ADCC-F22C9473C305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECC71F4-1548-4769-ADCC-F22C9473C305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECC71F4-1548-4769-ADCC-F22C9473C305}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
