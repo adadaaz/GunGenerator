@@ -1,0 +1,9 @@
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe.config
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.pdb
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csprojResolveAssemblyReference.cache
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.frmGunGenerator.resources
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.Properties.Resources.resources
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csproj.GenerateResource.Cache
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.exe
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.pdb
