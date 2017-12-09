@@ -42,11 +42,12 @@
             this.txtFireRate = new System.Windows.Forms.TextBox();
             this.txtReload = new System.Windows.Forms.TextBox();
             this.txtMagazine = new System.Windows.Forms.TextBox();
-            this.btnModify = new System.Windows.Forms.Button();
+            this.btnReroll = new System.Windows.Forms.Button();
             this.comboxManufacturer = new System.Windows.Forms.ComboBox();
             this.lblManufacturer = new System.Windows.Forms.Label();
             this.lblWeapon = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
+            this.btnCreate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnGenerate
@@ -81,6 +82,7 @@
             this.cmboxGunType.Name = "cmboxGunType";
             this.cmboxGunType.Size = new System.Drawing.Size(207, 21);
             this.cmboxGunType.TabIndex = 2;
+            this.cmboxGunType.SelectedIndexChanged += new System.EventHandler(this.cmboxGunType_SelectedIndexChanged);
             // 
             // txtGunName
             // 
@@ -174,15 +176,15 @@
             this.txtMagazine.Size = new System.Drawing.Size(91, 20);
             this.txtMagazine.TabIndex = 13;
             // 
-            // btnModify
+            // btnReroll
             // 
-            this.btnModify.Location = new System.Drawing.Point(150, 322);
-            this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(91, 23);
-            this.btnModify.TabIndex = 14;
-            this.btnModify.Text = "Modify";
-            this.btnModify.UseVisualStyleBackColor = true;
-            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
+            this.btnReroll.Location = new System.Drawing.Point(150, 322);
+            this.btnReroll.Name = "btnReroll";
+            this.btnReroll.Size = new System.Drawing.Size(91, 23);
+            this.btnReroll.TabIndex = 14;
+            this.btnReroll.Text = "Reroll";
+            this.btnReroll.UseVisualStyleBackColor = true;
+            this.btnReroll.Click += new System.EventHandler(this.btnReroll_Click);
             // 
             // comboxManufacturer
             // 
@@ -198,6 +200,7 @@
             this.comboxManufacturer.Name = "comboxManufacturer";
             this.comboxManufacturer.Size = new System.Drawing.Size(207, 21);
             this.comboxManufacturer.TabIndex = 15;
+            this.comboxManufacturer.SelectedIndexChanged += new System.EventHandler(this.comboxManufacturer_SelectedIndexChanged);
             // 
             // lblManufacturer
             // 
@@ -226,16 +229,27 @@
             this.lblName.TabIndex = 18;
             this.lblName.Text = "Name:";
             // 
+            // btnCreate
+            // 
+            this.btnCreate.Location = new System.Drawing.Point(34, 322);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(91, 23);
+            this.btnCreate.TabIndex = 19;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
             // frmGunGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(680, 446);
+            this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblWeapon);
             this.Controls.Add(this.lblManufacturer);
             this.Controls.Add(this.comboxManufacturer);
-            this.Controls.Add(this.btnModify);
+            this.Controls.Add(this.btnReroll);
             this.Controls.Add(this.txtMagazine);
             this.Controls.Add(this.txtReload);
             this.Controls.Add(this.txtFireRate);
@@ -273,11 +287,12 @@
         private System.Windows.Forms.TextBox txtFireRate;
         private System.Windows.Forms.TextBox txtReload;
         private System.Windows.Forms.TextBox txtMagazine;
-        private System.Windows.Forms.Button btnModify;
+        private System.Windows.Forms.Button btnReroll;
         private System.Windows.Forms.ComboBox comboxManufacturer;
         private System.Windows.Forms.Label lblManufacturer;
         private System.Windows.Forms.Label lblWeapon;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Button btnCreate;
     }
 }
 

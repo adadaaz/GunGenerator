@@ -7,3 +7,12 @@ D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.Propert
 D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csproj.GenerateResource.Cache
 D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.exe
 D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.pdb
+H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe.config
+H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe
+H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.pdb
+H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csprojResolveAssemblyReference.cache
+H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.frmGunGenerator.resources
+H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.Properties.Resources.resources
+H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csproj.GenerateResource.Cache
+H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.exe
+H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.pdb
