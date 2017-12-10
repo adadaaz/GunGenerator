@@ -36,8 +36,9 @@ namespace GunGenerator
         {
             if (MyWeapon != null)
             {
-                string selectedManufacturer = comboxManufacturer.SelectedItem.ToString();
+                string selectedManufacturer = cmboxManufacturer.SelectedItem.ToString();
                 MyWeapon.Manufacturer = selectedManufacturer;
+                MyWeapon.SetManufactureRandomRange(cmboxManufacturer.SelectedIndex);
             }
            // MyWeapon.SetManufactureRandomRange(comboxManufacturer.SelectedIndex);
           //  MyWeapon.RerollStats();
@@ -56,7 +57,7 @@ namespace GunGenerator
         }
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            if (txtGunName.Text != null && comboxManufacturer.SelectedIndex != -1 && cmboxGunType.SelectedIndex != -1)
+            if (txtGunName.Text != null && cmboxManufacturer.SelectedIndex != -1 && cmboxGunType.SelectedIndex != -1)
             {
                 string name = txtGunName.Text;
                 txtGunName.ReadOnly = true;
@@ -65,10 +66,10 @@ namespace GunGenerator
                 {
                     MyWeapon = new Weapon();
                     MyWeapon.Name = name;
-                    MyWeapon.Manufacturer = comboxManufacturer.SelectedItem.ToString();
+                    MyWeapon.Manufacturer = cmboxManufacturer.SelectedItem.ToString();
                     MyWeapon.GunType = cmboxGunType.SelectedIndex;
                     MyWeapon.SetGun();
-                    MyWeapon.SetManufactureRandomRange(comboxManufacturer.SelectedIndex);
+                    MyWeapon.SetManufactureRandomRange(cmboxManufacturer.SelectedIndex);
                     MyWeapon.RerollStats();
                 }
                 TextBoxDisplay();
@@ -87,6 +88,26 @@ namespace GunGenerator
             txtFireRate.Text = MyWeapon.FireRate.ToString();
             txtMagazine.Text = MyWeapon.Magazine.ToString();
             txtReload.Text = MyWeapon.ReloadSpeed.ToString();
+            switch (cmboxManufacturer.SelectedIndex)
+            {
+                case 0:
+                    txtDamage.Text += "  *";
+                    break;
+                case 1:
+                    txtReload.Text += "  *";
+                    break;
+                case 2:
+                    txtFireRate.Text += "  *";
+                    break;
+                case 3:
+                    txtAccuracy.Text += "  *";
+                    break;
+                case 4:
+                    txtMagazine.Text += "  *";
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void btnReroll_Click(object sender, EventArgs e)
@@ -96,6 +117,11 @@ namespace GunGenerator
                 MyWeapon.RerollStats();
                 TextBoxDisplay();
             }
+        }
+
+        private void btnGenerate_Click(object sender, EventArgs e)
+        {
+
         }
     }
     // Weapon Class
@@ -107,8 +133,18 @@ namespace GunGenerator
         private float _baseAccuracy;
         private float _baseFireRate;
         private float _baseReloadSpeed;
-        private float _ManufacturerMin;
-        private float _ManufacturerMax;
+
+        private int _baseDamageMin;
+        private int _baseDamageMax;
+        private float _baseAccuracyMin;
+        private float _baseAccuracyMax;
+        private float _baseFireRateMin;
+        private float _baseFireRateMax;
+        private float _baseReloadSpeedMin;
+        private float _baseReloadSpeedMax;
+        private int _baseMagazineMin;
+        private int _baseMagazineMax;
+
         //display attributes
         public string Name { get; set; }
         public string Manufacturer { get; set; }
@@ -132,58 +168,70 @@ namespace GunGenerator
             {
                 case 0:
                     //pistols
-                    SetBaseAttributes(1000, 56.2f, 12.1f, 30.2f, 7);
+                    SetBaseAttributes(8000, 85.0f, 1.5f, 2.0f, 7);
                     break;
                 case 1:
                     //submachine
-                    SetBaseAttributes(1000, 56.2f, 12.1f, 30.2f, 7);
+                    SetBaseAttributes(8000, 85.0f, 3.5f, 2.5f, 13);
                     break;
                 case 2:
                     //shotgun
-                    SetBaseAttributes(1000, 56.2f, 12.1f, 30.2f, 7);
+                    SetBaseAttributes(300000, 20.0f, 0.3f, 3.5f, 4);
                     break;
                 case 3:
                     //assult rifle
-                    SetBaseAttributes(1000, 56.2f, 12.1f, 30.2f, 7);
+                    SetBaseAttributes(8000, 80.0f, 4.0f, 2.5f, 15);
                     break;
                 case 4:
                     //sniper
-                    SetBaseAttributes(1000, 56.2f, 12.1f, 30.2f, 7);
+                    SetBaseAttributes(70000, 90.0f, 2.0f, 4.0f, 4);
                     break;
                 default:
                     MessageBox.Show("Can't Read GunType");
                     break;
             }
         }
-        private void ManufactureRange(float min, float max)
-        {
-            _ManufacturerMin = min;
-            _ManufacturerMax = max;
-        }
+
         public void SetManufactureRandomRange(int idx)
         {
+            _baseDamageMin = 10;
+            _baseDamageMax = 5000;
+            _baseAccuracyMin = 0.0f;
+            _baseAccuracyMax = 8.0f;
+            _baseFireRateMin = 0.0f;
+            _baseFireRateMax = 1.5f;
+            _baseReloadSpeedMin = 0.0f;
+            _baseReloadSpeedMax = 1.0f;
+            _baseMagazineMin = 0;
+            _baseMagazineMax = 20;
+
             if (idx == -1) return;
             switch (idx)
             {
                 case 0:
                     //jackob
-                    ManufactureRange(10,15);
+                    _baseDamageMin = 3000;
+                    _baseDamageMax = 10000;
                     break;
                 case 1:
                     //TEDIORE
-                    ManufactureRange(10, 15);
+                    _baseReloadSpeedMin = 0.8f;
+                    _baseReloadSpeedMax = 1.7f;
                     break;
                 case 2:
                     //MALIWAN
-                    ManufactureRange(10, 15);
+                    _baseFireRateMin = 1.0f;
+                    _baseFireRateMax = 2.5f;
                     break;
                 case 3:
                     //DAHL
-                    ManufactureRange(10, 15);
+                    _baseAccuracyMin = 5.0f;
+                    _baseAccuracyMax = 12.0f;
                     break;
                 case 4:
                     //HYPERION
-                    ManufactureRange(10, 15);
+                    _baseMagazineMin = 15;
+                    _baseMagazineMax = 35;
                     break;
                 default:
                     MessageBox.Show("Invalid indx");
@@ -200,11 +248,11 @@ namespace GunGenerator
         }
         public void RerollStats()
         {
-            Damage = _baseDamage + RandomInt((int)_ManufacturerMin, (int)_ManufacturerMax);
-            Accuracy = _baseAccuracy + RandomFloat(_ManufacturerMin, _ManufacturerMax);
-            FireRate = _baseFireRate + RandomFloat(_ManufacturerMin, _ManufacturerMax);
-            ReloadSpeed = _baseReloadSpeed + RandomFloat(_ManufacturerMin, _ManufacturerMax);
-            Magazine = _baseMagazine + RandomInt((int)_ManufacturerMin, (int)_ManufacturerMax);
+            Damage = _baseDamage + RandomInt((int)_baseDamageMin, (int)_baseDamageMax);
+            Accuracy = _baseAccuracy + RandomFloat(_baseAccuracyMin, _baseAccuracyMax);
+            FireRate = _baseFireRate + RandomFloat(_baseFireRateMin, _baseFireRateMax);
+            ReloadSpeed = _baseReloadSpeed - RandomFloat(_baseReloadSpeedMin, _baseReloadSpeedMax);
+            Magazine = _baseMagazine + RandomInt((int)_baseMagazineMin, (int)_baseMagazineMax);
         }
         public int RandomInt(int min, int max)
         {

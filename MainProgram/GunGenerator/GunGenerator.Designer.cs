@@ -43,7 +43,7 @@
             this.txtReload = new System.Windows.Forms.TextBox();
             this.txtMagazine = new System.Windows.Forms.TextBox();
             this.btnReroll = new System.Windows.Forms.Button();
-            this.comboxManufacturer = new System.Windows.Forms.ComboBox();
+            this.cmboxManufacturer = new System.Windows.Forms.ComboBox();
             this.lblManufacturer = new System.Windows.Forms.Label();
             this.lblWeapon = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
@@ -58,6 +58,7 @@
             this.btnGenerate.TabIndex = 0;
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.UseVisualStyleBackColor = true;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // btnExport
             // 
@@ -186,21 +187,21 @@
             this.btnReroll.UseVisualStyleBackColor = true;
             this.btnReroll.Click += new System.EventHandler(this.btnReroll_Click);
             // 
-            // comboxManufacturer
+            // cmboxManufacturer
             // 
-            this.comboxManufacturer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboxManufacturer.FormattingEnabled = true;
-            this.comboxManufacturer.Items.AddRange(new object[] {
+            this.cmboxManufacturer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmboxManufacturer.FormattingEnabled = true;
+            this.cmboxManufacturer.Items.AddRange(new object[] {
             "JAKOBS",
             "TEDIORE",
             "MALIWAN",
             "DAHL",
             "HYPERION"});
-            this.comboxManufacturer.Location = new System.Drawing.Point(34, 91);
-            this.comboxManufacturer.Name = "comboxManufacturer";
-            this.comboxManufacturer.Size = new System.Drawing.Size(207, 21);
-            this.comboxManufacturer.TabIndex = 15;
-            this.comboxManufacturer.SelectedIndexChanged += new System.EventHandler(this.comboxManufacturer_SelectedIndexChanged);
+            this.cmboxManufacturer.Location = new System.Drawing.Point(34, 91);
+            this.cmboxManufacturer.Name = "cmboxManufacturer";
+            this.cmboxManufacturer.Size = new System.Drawing.Size(207, 21);
+            this.cmboxManufacturer.TabIndex = 15;
+            this.cmboxManufacturer.SelectedIndexChanged += new System.EventHandler(this.comboxManufacturer_SelectedIndexChanged);
             // 
             // lblManufacturer
             // 
@@ -248,7 +249,7 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblWeapon);
             this.Controls.Add(this.lblManufacturer);
-            this.Controls.Add(this.comboxManufacturer);
+            this.Controls.Add(this.cmboxManufacturer);
             this.Controls.Add(this.btnReroll);
             this.Controls.Add(this.txtMagazine);
             this.Controls.Add(this.txtReload);
@@ -288,7 +289,7 @@
         private System.Windows.Forms.TextBox txtReload;
         private System.Windows.Forms.TextBox txtMagazine;
         private System.Windows.Forms.Button btnReroll;
-        private System.Windows.Forms.ComboBox comboxManufacturer;
+        private System.Windows.Forms.ComboBox cmboxManufacturer;
         private System.Windows.Forms.Label lblManufacturer;
         private System.Windows.Forms.Label lblWeapon;
         private System.Windows.Forms.Label lblName;
