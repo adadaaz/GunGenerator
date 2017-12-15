@@ -48,6 +48,8 @@
             this.lblWeapon = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
+            this.picBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGenerate
@@ -240,11 +242,20 @@
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
+            // picBox1
+            // 
+            this.picBox1.Location = new System.Drawing.Point(271, 41);
+            this.picBox1.Name = "picBox1";
+            this.picBox1.Size = new System.Drawing.Size(314, 243);
+            this.picBox1.TabIndex = 20;
+            this.picBox1.TabStop = false;
+            // 
             // frmGunGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 446);
+            this.ClientSize = new System.Drawing.Size(626, 450);
+            this.Controls.Add(this.picBox1);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblWeapon);
@@ -267,6 +278,7 @@
             this.Controls.Add(this.btnGenerate);
             this.Name = "frmGunGenerator";
             this.Text = "Gun Generator";
+            ((System.ComponentModel.ISupportInitialize)(this.picBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,6 +306,7 @@
         private System.Windows.Forms.Label lblWeapon;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.PictureBox picBox1;
     }
 }
 

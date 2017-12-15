@@ -26,3 +26,12 @@ E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerat
 E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csproj.CoreCompileInputs.cache
 E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.exe
 E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.pdb
+D:\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe.config
+D:\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe
+D:\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.pdb
+D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csprojResolveAssemblyReference.cache
+D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.frmGunGenerator.resources
+D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.Properties.Resources.resources
+D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csproj.GenerateResource.Cache
+D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.exe
+D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.pdb

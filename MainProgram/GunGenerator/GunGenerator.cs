@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +16,107 @@ namespace GunGenerator
 {
     public partial class frmGunGenerator : Form
     {
+        Image[] PistolBarrel = System.IO.Directory.GetFiles("../Debug/pic/Pistle/Pistle_Barrels").Select(f => Image.FromFile(f)).ToArray();
+        Image[] PistolGrip = System.IO.Directory.GetFiles("../Debug/pic/Pistle/Pistle_Grips").Select(f => Image.FromFile(f)).ToArray();
+        Image PistolBody = Image.FromFile(@"../Debug/pic/Pistle/Pistle_Body.png");
+
+        Image[] RifleBarrel = System.IO.Directory.GetFiles("../Debug/pic/Rifle/Assault_Rifle_Barrel").Select(f => Image.FromFile(f)).ToArray();
+        Image[] RifleGrip = System.IO.Directory.GetFiles("../Debug/pic/Rifle/Assault_Rifle_Grips").Select(f => Image.FromFile(f)).ToArray();
+        Image[] RifleStock = System.IO.Directory.GetFiles("../Debug/pic/Rifle/Assault_Rifle_Stocks").Select(f => Image.FromFile(f)).ToArray();
+        Image RifleBody = Image.FromFile(@"../Debug/pic/Rifle/Assault_Rifle_Body.png");
+
+        Image[] RPGBarrel = System.IO.Directory.GetFiles("../Debug/pic/RPG/RPG_Barrel").Select(f => Image.FromFile(f)).ToArray();
+        Image[] RPGGrip = System.IO.Directory.GetFiles("../Debug/pic/RPG/RPG_Grip").Select(f => Image.FromFile(f)).ToArray();
+        Image[] RPGExhaust = System.IO.Directory.GetFiles("../Debug/pic/RPG/RPG_Exhaust").Select(f => Image.FromFile(f)).ToArray();
+        Image RPGBody = Image.FromFile(@"../Debug/pic/RPG/RPG_Body.png");
+
+        Image[] ShotgunBarrel = System.IO.Directory.GetFiles("../Debug/pic/Shotgun/Shotgun_Barrel").Select(f => Image.FromFile(f)).ToArray();
+        Image[] ShotgunStock = System.IO.Directory.GetFiles("../Debug/pic/Shotgun/Shotgun_Stock").Select(f => Image.FromFile(f)).ToArray();
+        Image ShotgunBody = Image.FromFile(@"../Debug/pic/Shotgun/Shotgun_Body.png");
+
+        Image[] SniperBarrel = System.IO.Directory.GetFiles("../Debug/pic/Sniper/Sniper_Barrel").Select(f => Image.FromFile(f)).ToArray();
+        Image[] SniperGrip = System.IO.Directory.GetFiles("../Debug/pic/Sniper/Sniper_Grip").Select(f => Image.FromFile(f)).ToArray();
+        Image[] SniperStock = System.IO.Directory.GetFiles("../Debug/pic/Sniper/Sniper_Stock").Select(f => Image.FromFile(f)).ToArray();
+        Image SniperBody = Image.FromFile(@"../Debug/pic/Sniper/Sniper_Body.png");
+    
+
+        private void LoadRifle()
+        {
+            Image img = new Bitmap(RifleBarrel[0].Width, RifleBarrel[0].Height);
+            using (Graphics gr = Graphics.FromImage(img))
+            {
+                gr.DrawImage(RifleBarrel[cmboxManufacturer.SelectedIndex], new Point(0, 0));
+                gr.DrawImage(RifleGrip[cmboxManufacturer.SelectedIndex], new Point(0, 0));
+                gr.DrawImage(RifleStock[cmboxManufacturer.SelectedIndex], new Point(0, 0));
+                gr.DrawImage(RifleBody, new Point(0, 0));
+            }
+            img.Save("output.png", ImageFormat.Png);
+            picBox1.ImageLocation = @"../Debug/output.png";
+            picBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+        }
+
+        private void LoadPistol()
+        {
+            Image img = new Bitmap(PistolBarrel[0].Width, PistolBarrel[0].Height);
+            using (Graphics gr = Graphics.FromImage(img))
+            {
+                gr.DrawImage(PistolBarrel[cmboxManufacturer.SelectedIndex], new Point(0, 0));
+                gr.DrawImage(PistolGrip[cmboxManufacturer.SelectedIndex], new Point(0, 0));
+                gr.DrawImage(PistolBody, new Point(0, 0));
+            }
+            img.Save("output.png", ImageFormat.Png);
+            picBox1.ImageLocation = @"../Debug/output.png";
+            picBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+        }
+
+        private void LoadRPG()
+        {
+            Image img = new Bitmap(RPGBarrel[0].Width, RPGBarrel[0].Height);
+            using (Graphics gr = Graphics.FromImage(img))
+            {
+                gr.DrawImage(RPGBarrel[cmboxManufacturer.SelectedIndex], new Point(0, 0));
+                gr.DrawImage(RPGGrip[cmboxManufacturer.SelectedIndex], new Point(0, 0));
+                gr.DrawImage(RPGExhaust[cmboxManufacturer.SelectedIndex], new Point(0, 0));
+                gr.DrawImage(RPGBody, new Point(0, 0));
+            }
+            img.Save("output.png", ImageFormat.Png);
+            picBox1.ImageLocation = @"../Debug/output.png";
+            picBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+        }
+
+        private void LoadShotgun()
+        {
+            Random rng = new Random();
+
+            Image img = new Bitmap(ShotgunBarrel[0].Width, ShotgunBarrel[0].Height);
+            using (Graphics gr = Graphics.FromImage(img))
+            {
+                gr.DrawImage(ShotgunBarrel[cmboxManufacturer.SelectedIndex], new Point(0, 0));
+                gr.DrawImage(ShotgunStock[cmboxManufacturer.SelectedIndex], new Point(0, 0));
+                gr.DrawImage(ShotgunBody, new Point(0, 0));
+            }
+            img.Save("output.png", ImageFormat.Png);
+            picBox1.ImageLocation = @"../Debug/output.png";
+            picBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+        }
+
+        private void LoadSniper()
+        {
+            Image img = new Bitmap(SniperBarrel[0].Width, SniperBarrel[0].Height);
+            using (Graphics gr = Graphics.FromImage(img))
+            {
+                gr.DrawImage(SniperBarrel[cmboxManufacturer.SelectedIndex], new Point(0, 0));
+                gr.DrawImage(SniperGrip[cmboxManufacturer.SelectedIndex], new Point(0, 0));
+                gr.DrawImage(SniperStock[cmboxManufacturer.SelectedIndex], new Point(0, 0));
+                gr.DrawImage(SniperBody, new Point(0, 0));
+            }
+            img.Save("output.png", ImageFormat.Png);
+            picBox1.ImageLocation = @"../Debug/output.png";
+            picBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+        }
+
+
+
         public frmGunGenerator()
         {
             InitializeComponent();
@@ -57,7 +160,8 @@ namespace GunGenerator
         }
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            if (txtGunName.Text != null && cmboxManufacturer.SelectedIndex != -1 && cmboxGunType.SelectedIndex != -1)
+            string gunName = txtGunName.Text;
+            if (!string.IsNullOrEmpty(gunName) && cmboxManufacturer.SelectedIndex != -1 && cmboxGunType.SelectedIndex != -1)
             {
                 string name = txtGunName.Text;
                 txtGunName.ReadOnly = true;
@@ -73,12 +177,32 @@ namespace GunGenerator
                     MyWeapon.RerollStats();
                 }
                 TextBoxDisplay();
+                switch (cmboxGunType.SelectedIndex)
+                {
+                    case 0:
+                        LoadPistol();
+                        break;
+                    case 1:
+                        LoadRPG();
+                        break;
+                    case 2:
+                        LoadShotgun();
+                        break;
+                    case 3:
+                        LoadRifle();
+                        break;
+                    case 4:
+                        LoadSniper();
+                        break;
+                    default:
+                        break;
+                }
             }
             else
             {
                 txtGunName.ReadOnly = false;
                 MessageBox.Show("Invalid Input");
-            }
+            }            
         }
         public void TextBoxDisplay()
         {
@@ -109,6 +233,8 @@ namespace GunGenerator
                     break;
             }
         }
+
+        
 
         private void btnReroll_Click(object sender, EventArgs e)
         {
