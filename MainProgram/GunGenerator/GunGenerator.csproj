@@ -35,6 +35,10 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+<<<<<<< HEAD
+=======
+    <Reference Include="System.Web.Extensions" />
+>>>>>>> master
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />

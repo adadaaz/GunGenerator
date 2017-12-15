@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe.config
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.pdb
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csprojResolveAssemblyReference.cache
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.frmGunGenerator.resources
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.Properties.Resources.resources
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csproj.GenerateResource.Cache
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.exe
+D:\Sherlock\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.pdb
+>>>>>>> master
 H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe.config
 H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe
 H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.pdb
@@ -7,3 +19,37 @@ H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\obj\Debug\Gun
 H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csproj.GenerateResource.Cache
 H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.exe
 H:\VGP232 C#\WeaponGenerator\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.pdb
+<<<<<<< HEAD
+=======
+E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe.config
+E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe
+E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.pdb
+E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csprojResolveAssemblyReference.cache
+E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.frmGunGenerator.resources
+E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.Properties.Resources.resources
+E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csproj.GenerateResource.Cache
+E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csproj.CoreCompileInputs.cache
+E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.exe
+E:\The Art Insititute of Vancouver\GitFolder\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.pdb
+D:\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe.config
+D:\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe
+D:\GunGenerator\MainProgram\GunGenerator\bin\Debug\GunGenerator.pdb
+D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csprojResolveAssemblyReference.cache
+D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.frmGunGenerator.resources
+D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.Properties.Resources.resources
+D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csproj.GenerateResource.Cache
+D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.exe
+D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.pdb
+<<<<<<< HEAD
+C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe.config
+C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe
+C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\bin\Debug\GunGenerator.pdb
+C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\obj\Debug\GunGenerator.csprojResolveAssemblyReference.cache
+C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\obj\Debug\GunGenerator.frmGunGenerator.resources
+C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\obj\Debug\GunGenerator.Properties.Resources.resources
+C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\obj\Debug\GunGenerator.csproj.GenerateResource.Cache
+C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\obj\Debug\GunGenerator.exe
+C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\obj\Debug\GunGenerator.pdb
+=======
+>>>>>>> 19cc9c0f8750c221b5187168e7caf5ba180f30f6
+>>>>>>> master
