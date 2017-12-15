@@ -295,7 +295,10 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.PictureBox picBox1;
+<<<<<<< HEAD
         private System.Windows.Forms.ComboBox cmboxManufacturer;
+=======
+>>>>>>> 19cc9c0f8750c221b5187168e7caf5ba180f30f6
     }
 }
 

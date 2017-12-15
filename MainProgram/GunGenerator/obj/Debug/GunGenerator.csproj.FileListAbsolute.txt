@@ -35,6 +35,7 @@ D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.Properties.Resou
 D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.csproj.GenerateResource.Cache
 D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.exe
 D:\GunGenerator\MainProgram\GunGenerator\obj\Debug\GunGenerator.pdb
+<<<<<<< HEAD
 C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe.config
 C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\bin\Debug\GunGenerator.exe
 C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\bin\Debug\GunGenerator.pdb
@@ -44,3 +45,5 @@ C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\G
 C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\obj\Debug\GunGenerator.csproj.GenerateResource.Cache
 C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\obj\Debug\GunGenerator.exe
 C:\Users\0144900\Downloads\GunGenerator-master\GunGenerator-master\MainProgram\GunGenerator\obj\Debug\GunGenerator.pdb
+=======
+>>>>>>> 19cc9c0f8750c221b5187168e7caf5ba180f30f6
