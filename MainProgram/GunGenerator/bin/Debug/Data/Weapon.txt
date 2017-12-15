@@ -1,5 +1,8 @@
 Pistols
-Submachine Guns
+
+RPG
 Shotguns
+
 Assault Rifles
+
 Sniper Rifles
