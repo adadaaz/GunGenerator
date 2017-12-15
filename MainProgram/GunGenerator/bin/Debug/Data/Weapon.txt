@@ -1,8 +1,5 @@
 Pistols
-
 RPG
 Shotguns
-
 Assault Rifles
-
 Sniper Rifles
